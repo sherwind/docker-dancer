@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -r
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5000
-CMD [ "carton", "exec", "starman", "bin/app.psgi" ]
+CMD [ "carton", "exec", "starman", "-E", "development", "bin/app.psgi" ]
