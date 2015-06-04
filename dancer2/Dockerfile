@@ -1,5 +1,5 @@
 # ported from rails
-FROM perl:5.22
+FROM perl:5.20
 MAINTAINER Sherwin Daganato sherwin@daganato.com
 
 RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -rf /var/lib/apt/lists/*
