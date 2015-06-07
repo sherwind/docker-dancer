@@ -1,7 +1,7 @@
 Supported tags and respective `Dockerfile` links
 ================================================
 
- - [`0.160002`,&nbsp;`latest`&nbsp;*(Dockerfile)*][1]
+ - [`0.160003`,&nbsp;`0.160002`,&nbsp;`latest`&nbsp;*(Dockerfile)*][1]
  - [`onbuild`&nbsp;*(onbuild/Dockerfile)*][2]
 
 How to use this image
@@ -20,7 +20,7 @@ You can then build and run the Docker image:
     docker build -t my-dancer-app .
     docker run -it --rm --name my-running-app my-dancer-app
 
-You can test it by visiting http://container-ip:5000 in a browser or, if you need access outside the host, on port 8080:
+You can test it by visiting `http://container-ip:5000` in a browser or, if you need access outside the host, on port 8080:
 
     docker run -it --rm --name my-running-app -p 8080:5000 my-dancer-app
 
