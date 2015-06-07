@@ -18,13 +18,11 @@ Create a `Dockerfile` in your Dancer app project
 You can then build and run the Docker image:
 
     docker build -t my-dancer-app .
-    docker run -it --rm --name my-running-app my-dancer-app
+    docker run -it --rm --name my-running-app -p 5000:5000 my-dancer-app
 
-You can test it by visiting `http://container-ip:5000` in a browser or, if you need access outside the host, on port 8080:
+You can test it by visiting `http://localhost:5000` in a browser. If you are using `boot2docker` on Mac OS X, use OS X's `open` command to test it instead:
 
-    docker run -it --rm --name my-running-app -p 8080:5000 my-dancer-app
-
-You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
+    open http://$(boot2docker ip 2>/dev/null):5000
 
 ### Generate a `cpanfile.snapshot`
 
