@@ -1,7 +1,7 @@
 Supported tags and respective `Dockerfile` links
 ================================================
 
- - [`0.160003`,&nbsp;`0.160002`,&nbsp;`latest`&nbsp;*(Dockerfile)*][1]
+ - [`0.161000`,&nbsp;`0.160003`,&nbsp;`latest`&nbsp;*(Dockerfile)*][1]
  - [`onbuild`&nbsp;*(onbuild/Dockerfile)*][2]
 
 How to use this image
