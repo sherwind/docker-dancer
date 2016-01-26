@@ -2,7 +2,7 @@
 FROM perl:5.20
 MAINTAINER Sherwin Daganato sherwin@daganato.com
 
-RUN cpanm Carton Starman && rm -rf /root/.cpanm
+RUN cpanm YAML Carton Starman && rm -rf /root/.cpanm
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
